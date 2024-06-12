@@ -1,6 +1,6 @@
-# Abstraction and Reasoning Corpus for Artificial General Intelligence (ARC-AGI)
+# Abstraction and Reasoning Corpus for Artificial General Intelligence (ARC-AGI) modded by Ahri
 
-This repository contains the ARC-AGI task data, as well as a browser-based interface for humans to try their hand at solving the tasks manually.
+This repository contains the ARC-AGI task data, as well as a browser-based interface for humans to try their hand at solving the tasks manually AGAINST AN AGI.
 
 *"ARC can be seen as a general artificial intelligence benchmark, as a program synthesis benchmark, or as a psychometric intelligence test. It is targeted at both humans and artificially intelligent systems that aim at emulating a human-like form of general fluid intelligence."*
 
