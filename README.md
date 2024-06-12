@@ -59,7 +59,7 @@ You have access to the following tools:
 
 ### Answer validation
 
-When your output grid is ready, click the green "Submit!" button to check your answer. We do not enforce the 3-trials rule.
+When your output grid is ready, click the green "Submit!" button to check your answer. We do not enforce the 3-trials rule. You'll get a point if you do it before the AGI; if the AGI gets it first the AGI gets a point. 
 
 After you've obtained the correct answer for the current test input grid, you can switch to the next test input grid for the task using the "Next test input" button (if there is any available; most tasks only have one test input).
 
