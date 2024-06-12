@@ -1,3 +1,55 @@
+// global variables
+let userScore = 0;
+let aiScore = 0;
+let roundsLeft = 10;
+
+function updateScoreboard() {
+    $("#user_score").text(`User Score: ${userScore}`);
+    $("#ai_score").text(`AI Score: ${aiScore}`);
+    $("#rounds_left").text(`Rounds Left: ${roundsLeft}`);
+}
+
+function nextRound() {
+    roundsLeft -= 1;
+    updateScoreboard();
+    if (roundsLeft === 0) {
+        endGame();
+    } else {
+        nextTestInput();
+    }
+}
+
+function endGame() {
+    alert(`Game Over! Final Scores:\nUser: ${userScore}\nAI: ${aiScore}`);
+}
+
+function submitSolution() {
+    // existing solution submission logic
+    let userCorrect = checkUserSolution();
+    let aiCorrect = checkAISolution();
+    
+    if (userCorrect) userScore += 1;
+    if (aiCorrect) aiScore += 1;
+
+    updateScoreboard();
+    nextRound();
+}
+
+function checkUserSolution() {
+    // logic to check if user's solution is correct
+    return true; // or false based on the actual check
+}
+
+function checkAISolution() {
+    // logic to check if AI's solution is correct
+    return true; // or false based on the actual check
+}
+
+$(document).ready(function() {
+    updateScoreboard();
+    // load initial task
+    randomTask();
+});
 
 // Internal state.
 var CURRENT_INPUT_GRID = new Grid(3, 3);
